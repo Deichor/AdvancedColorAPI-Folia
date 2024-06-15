@@ -48,7 +48,7 @@ public class RainbowPlaceholder extends Placeholder {
                 colors.add(new AdvancedColor(AdvancedColor.hsl2rgb(h2[0],s,l)));
 
                 i[0] += 0.02F;
-            }, 1, 20);
+            }, 1, 1);
 
         }else {
             id = Bukkit.getScheduler().scheduleSyncRepeatingTask(AdvancedColorAPI.i, () -> {
