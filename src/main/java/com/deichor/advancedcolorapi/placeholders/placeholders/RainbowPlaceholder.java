@@ -22,7 +22,9 @@ public class RainbowPlaceholder extends Placeholder {
 
     private final float[] i = {0};
     private int id;
+    private int finalId = id;
     private ScheduledTask task;
+    private ScheduledTask finalTask;
 
     private ArrayList<AdvancedColor> colors = new ArrayList<>();
 
@@ -33,9 +35,9 @@ public class RainbowPlaceholder extends Placeholder {
 
         if(PluginUtils.isFolia()){
 
-            task = Bukkit.getGlobalRegionScheduler().runAtFixedRate(AdvancedColorAPI.i, task -> {
+            this.task = Bukkit.getGlobalRegionScheduler().runAtFixedRate(AdvancedColorAPI.i, task -> {
                 if(i[0] > 4f){
-                    task.cancel();
+                    finalTask.cancel();
                 }
 
                 h[0] += 0.02f;
@@ -45,13 +47,13 @@ public class RainbowPlaceholder extends Placeholder {
                 colors.add(new AdvancedColor(AdvancedColor.hsl2rgb(h[0],s,l)));
                 colors.add(new AdvancedColor(AdvancedColor.hsl2rgb(h2[0],s,l)));
 
-                i[0] += 0.02;
+                i[0] += 0.02F;
             }, 1, 20);
 
         }else {
             id = Bukkit.getScheduler().scheduleSyncRepeatingTask(AdvancedColorAPI.i, () -> {
                 if(i[0] > 4f){
-                    Bukkit.getScheduler().cancelTask(id);
+                    Bukkit.getScheduler().cancelTask(finalId);
                 }
 
                 h[0] += 0.02f;
@@ -61,7 +63,7 @@ public class RainbowPlaceholder extends Placeholder {
                 colors.add(new AdvancedColor(AdvancedColor.hsl2rgb(h[0],s,l)));
                 colors.add(new AdvancedColor(AdvancedColor.hsl2rgb(h2[0],s,l)));
 
-                i[0] += 0.02;
+                i[0] += 0.02F;
             },0,1);
         }
 
