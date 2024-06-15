@@ -22,9 +22,9 @@ public class RainbowPlaceholder extends Placeholder {
 
     private final float[] i = {0};
     private int id;
-    private int finalId = id;
+    private final int finalId = id;
     private ScheduledTask task;
-    private ScheduledTask finalTask;
+    private final ScheduledTask finalTask = task;
 
     private ArrayList<AdvancedColor> colors = new ArrayList<>();
 
