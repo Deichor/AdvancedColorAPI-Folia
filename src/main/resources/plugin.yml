@@ -1,0 +1,10 @@
+name: AdvancedColorAPI
+version: 0.1.0
+main: com.deichor.advancedcolorapi.AdvancedColorAPI
+author: [Deichor, NitkaNikita]
+api-version: 1.16
+softdepend:
+  - PlaceholderAPI
+commands:
+  ac:
+    usage: /ac
