@@ -1,4 +1,4 @@
-package com.deichor.advancedcolorapi.types.сomponents;
+package com.deichor.advancedcolorapi.types.comps;
 
 import com.deichor.advancedcolorapi.types.AdvancedColor;
 import com.deichor.advancedcolorapi.types.BaseTextComponent;

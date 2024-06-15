@@ -34,6 +34,18 @@ public class AdvancedColorAPI extends JavaPlugin {
 
             placeholderRegister.register();
 
+            if(PluginUtils.isFolia()){
+
+                Bukkit.getGlobalRegionScheduler().runAtFixedRate(this, task -> {
+                    if(!placeholderRegister.isRegistered()) placeholderRegister.register();
+                }, 20, 100);
+
+            }else {
+                Bukkit.getScheduler().runTaskTimer(this,()->{
+                    if(!placeholderRegister.isRegistered()) placeholderRegister.register();
+                },20,100);
+            }
+
         }
     }
 }

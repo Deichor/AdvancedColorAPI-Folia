@@ -2,8 +2,7 @@ package com.deichor.advancedcolorapi.placeholders.placeholders;
 
 import com.deichor.advancedcolorapi.placeholders.Placeholder;
 import com.deichor.advancedcolorapi.types.AdvancedColor;
-import com.deichor.advancedcolorapi.types.сomponents.GradientedText;
-import me.clip.placeholderapi.PlaceholderAPI;
+import com.deichor.advancedcolorapi.types.comps.GradientedText;
 import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.entity.Player;
 

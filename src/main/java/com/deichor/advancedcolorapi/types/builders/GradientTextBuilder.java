@@ -1,7 +1,7 @@
 package com.deichor.advancedcolorapi.types.builders;
 
 import com.deichor.advancedcolorapi.types.AdvancedColor;
-import com.deichor.advancedcolorapi.types.сomponents.GradientedText;
+import com.deichor.advancedcolorapi.types.comps.GradientedText;
 
 import java.util.ArrayList;
 import java.util.Arrays;

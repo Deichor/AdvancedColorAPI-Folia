@@ -3,7 +3,7 @@ package com.deichor.advancedcolorapi.placeholders.placeholders;
 import com.deichor.advancedcolorapi.AdvancedColorAPI;
 import com.deichor.advancedcolorapi.placeholders.Placeholder;
 import com.deichor.advancedcolorapi.types.AdvancedColor;
-import com.deichor.advancedcolorapi.types.сomponents.GradientedText;
+import com.deichor.advancedcolorapi.types.comps.GradientedText;
 
 import com.deichor.advancedcolorapi.utils.PluginUtils;
 import io.papermc.paper.threadedregions.scheduler.ScheduledTask;

@@ -2,7 +2,7 @@ package com.deichor.advancedcolorapi.commands;
 
 import com.deichor.advancedcolorapi.General;
 import com.deichor.advancedcolorapi.types.AdvancedColor;
-import com.deichor.advancedcolorapi.types.сomponents.SolidText;
+import com.deichor.advancedcolorapi.types.comps.SolidText;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

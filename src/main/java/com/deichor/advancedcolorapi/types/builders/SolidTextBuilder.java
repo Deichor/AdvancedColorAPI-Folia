@@ -1,10 +1,7 @@
 package com.deichor.advancedcolorapi.types.builders;
 
 import com.deichor.advancedcolorapi.types.AdvancedColor;
-import com.deichor.advancedcolorapi.types.сomponents.GradientedText;
-import com.deichor.advancedcolorapi.types.сomponents.SolidText;
-
-import java.util.ArrayList;
+import com.deichor.advancedcolorapi.types.comps.SolidText;
 
 public class SolidTextBuilder{
 

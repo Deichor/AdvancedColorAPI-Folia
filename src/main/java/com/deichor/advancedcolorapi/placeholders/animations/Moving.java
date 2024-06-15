@@ -3,7 +3,7 @@ package com.deichor.advancedcolorapi.placeholders.animations;
 import com.deichor.advancedcolorapi.AdvancedColorAPI;
 import com.deichor.advancedcolorapi.placeholders.IAnimation;
 import com.deichor.advancedcolorapi.types.AdvancedColor;
-import com.deichor.advancedcolorapi.types.сomponents.GradientedText;
+import com.deichor.advancedcolorapi.types.comps.GradientedText;
 import com.deichor.advancedcolorapi.utils.RegExpUtils;
 import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.chat.TextComponent;
