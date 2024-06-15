@@ -21,9 +21,8 @@ public class RainbowPlaceholder extends Placeholder {
     private final float[] h2 = {0.1f};
 
     private final float[] i = {0};
-    private int id;
+    private int id = 0;
     private final int finalId = id;
-    private ScheduledTask task;
 
     private ArrayList<AdvancedColor> colors = new ArrayList<>();
 
@@ -34,10 +33,10 @@ public class RainbowPlaceholder extends Placeholder {
 
         if(PluginUtils.isFolia()){
 
-            task = Bukkit.getGlobalRegionScheduler().runAtFixedRate(AdvancedColorAPI.i, tasking -> {
+            Bukkit.getGlobalRegionScheduler().runAtFixedRate(AdvancedColorAPI.i, tasking -> {
                 if(i[0] > 4f){
 
-                    task.cancel();
+                    tasking.cancel();
                 }
 
                 h[0] += 0.02f;
